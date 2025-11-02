@@ -12,12 +12,15 @@
   },
   "license": "ISC",
   "author": "Andrii Rohovenko",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "node src/index.js",
+    "dev": "nodemon src/index.js"
   },
   "dependencies": {
-    "commander": "^14.0.2"
+    "commander": "^14.0.2",
+    "nanoid": "^4.0.0"
   }
 }
